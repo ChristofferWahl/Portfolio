@@ -1,0 +1,293 @@
+/* 
+ * What follows are a few rules that make CSS more predictable to work with. 
+ * You don't have to understand these, just scroll down to where the file ends.
+ * If you are curious, this practice is sometimes called a "CSS reset" or "CSS Preflight", more about that here: https://www.youtube.com/watch?v=RReMYwB594g
+ * — Love, 221027
+ */
+
+ /* Prevent padding and border from affecting element width. */
+ *, ::before, ::after {
+  box-sizing: border-box;
+  }
+
+/* Remove the margin in all browsers */
+body {
+  margin: 0;
+  line-height: inherit;
+}
+
+/* Remove the default font size and weight for headings. */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+
+/* Removes the default spacing for appropriate elements. */
+blockquote, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+  margin: 0;
+}
+
+ol, ul, menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/******************************************************************/
+/*  ↓  The CSS Reset is over and you can now write your code!  ↓  */
+
+#body-home 
+{background-color: #FC9C35;}
+
+  
+  .container{
+  display: flex;
+  justify-content:flex-end;
+  padding-top: 42px;
+  padding-right:140px;
+  color:white;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 80px;
+  }
+.about {
+  padding-left: 42px;
+  }
+.work {
+  padding-left: 42px; /* Nav bar line 45-55 + 62-73 */
+}
+body {
+  font-family: 'Lato', 
+  sans-serif;
+  background-color: #222222
+}
+a {
+  color:white;
+  text-decoration: none;
+  
+}
+a:hover{
+color: #FC9C35;
+}
+a.ex1:hover{
+  color:#222222
+}
+h1{
+  font-size: 66px;
+  font-weight: 800;
+  line-height: 51px;
+  letter-spacing: -0.8%;
+  color: #FC9C35;
+}
+h3{
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 70px;
+  letter-spacing: 1%;
+  color: #FC9C35;
+}
+
+h4{
+    font-size: 66px;
+    font-weight: 800;
+    line-height: 51px;
+    letter-spacing: -0.8%;
+    color: #222222;
+  }
+ 
+  h5{
+    font-size: 56px;
+      font-weight: 400;
+      line-height: 70px;
+      letter-spacing: 1%;
+      color: #222222;
+}
+h2 {
+  color: white;
+  font-size: 48px;
+  line-height: 42px;
+  }
+
+    .subheaderctrl {
+      margin-top: 80px;
+     }
+
+.headline1 { /*this is the headline on the homepage*/
+  display: flex;
+  flex-direction: column;
+  padding-top: 411px;
+  padding-left: 140px;
+  padding-bottom: 12px;
+}
+.line1 { /*this is the linebraker on the homepage*/
+  margin:auto;
+ }
+ .line2 { /*this is the linebraker on the about me & work page*/
+  margin: auto;}
+ 
+    .headline2 {
+      /*this controls the headline on the about me & work page*/
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      margin-left: 160px;
+      padding-bottom: 17px;}
+      
+      
+      .bio {/*this is the bio on the about me page*/
+        padding-left: 160px;
+        padding-top: 52px;
+        width: 700px;
+        color: white;
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: 300;
+        padding-bottom: 100px;
+      }
+      
+     
+      .container1 {
+        display:flex;
+        flex-direction: row;
+        width: 1440px;
+        margin-top: 120px;
+        margin-left: 160px;
+        padding-right: 180px;
+        justify-content: space-between;
+        }
+      
+        
+      .worktxt {
+        color: white;
+        font-size: 24px;
+        font-weight: 300;
+        margin-top: 24px;
+        width: 700px;
+        line-height: 150%;
+        }
+                .worktxt1 {
+                  color: white;
+                  font-size: 24px;
+                  font-weight: 300;
+                  margin-top: 95px;
+                  width: 700px;
+                  line-height: 150%;
+                }
+                    .worktxt2 {
+                      color: white;
+                      font-size: 24px;
+                      font-weight: 300;
+                      margin-top: 95px;
+                      width: 700px;
+                      line-height: 150%;
+}
+                        .worktxt3 {
+                          color: white;
+                          font-size: 24px;
+                          font-weight: 300;
+                          margin-top: 85px;
+                          width: 700px;
+                          line-height: 150%;
+                        }
+                            .worktxt4 {
+                              color: white;
+                              font-size: 24px;
+                              font-weight: 300;
+                              margin-top: 75px;
+                              width: 700px;
+                              line-height: 150%;
+                            }
+                .worktxt5 {
+                  color: white;
+                  font-size: 24px;
+                  font-weight: 300;
+                  margin-top: 65px;
+                  width: 700px;
+                  padding-bottom: 300px;
+                  line-height: 150%;
+                }
+        .workheader { 
+        margin-bottom: 14px;
+        font-size: 28px;
+        color: inherit;
+        font-weight: 400;
+          }
+         .workpic {
+          width: 500px;
+          height: 500px;
+         }
+         img {border-radius: 12px;}
+                    .container2 {
+                      display: flex;
+                     flex-direction: row-reverse;
+                      width: 1440px;
+                      margin-top: 60px;
+                      margin-left: 160px;
+                      padding-right: 180px;
+                      justify-content: space-between;
+                    }
+                    .container3 {
+                        display: flex;
+                        flex-direction: row;
+                        width: 1440px;
+                        margin-top: 60px;
+                        margin-left: 160px;
+                        padding-right: 180px;
+                        justify-content: space-between;
+                      }
+                    .container4 {
+                    flex-direction: row;
+                    width: 1800px;
+                    margin-top: 60px;
+                    margin-left: 80px;
+                    justify-content: space-between;
+                    }
+                          .convexhero{
+                          width:1250px;
+                          border-radius: 12px;
+                          margin-left: 200px;
+                          margin-top: -20px;
+                          }
+                                  .container5 {
+                                    display: flex;
+                                    flex-direction: row;
+                                    width: 1440px;
+                                    margin-top: 120px;
+                                    margin-left: 160px;
+                                    justify-content: space-between;
+                                  }
+                           
+              .projecttxt{
+              color: white;
+              font-size: 24px;
+              font-weight: 300;
+              margin-top: 30px;
+              margin-left: 200px;
+              width: 800px;
+              line-height: 150%;
+            }
+            .convex{
+              margin-top: 30px;
+              border-radius: 12px;
+              width:600px;
+              margin-left: 200px;
+              margin-right: -160px;
+            }
+    .projecttxt1 {
+      color: white;
+      font-size: 24px;
+      font-weight: 300;
+      margin-top: 30px;
+      margin-left: 200px;
+      width: 1250px;
+      padding-bottom: 100px;
+      line-height: 150%;
+    }
+   
